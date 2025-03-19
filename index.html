@@ -42,7 +42,7 @@
 let tr = document.createElement('tr');
     tr.innerHTML = "<td>" + response.data[0].date + "</td>"+
     "<td> 38.03 </td>" +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < 38.03 ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
+    "<td style='color:" + (parseFloat(response.data[0].nav) < (38.03 - 5.00) ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
     "<td>" + response.meta.scheme_name + "</td>";
     table.appendChild(tr);
 
@@ -57,7 +57,7 @@ let tr = document.createElement('tr');
 tr = document.createElement('tr');
     tr.innerHTML = "<td>" + response.data[0].date + "</td>"+
     "<td> 34.68 </td>" +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < 34.68 ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
+    "<td style='color:" + (parseFloat(response.data[0].nav) < (34.68 - 5.00) ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
     "<td>" + response.meta.scheme_name + "</td>";
     table.appendChild(tr);
 
@@ -72,7 +72,7 @@ tr = document.createElement('tr');
 tr = document.createElement('tr');
     tr.innerHTML = "<td>" + response.data[0].date + "</td>"+
     "<td> 319.98 </td>" +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < 319.98 ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
+    "<td style='color:" + (parseFloat(response.data[0].nav) < (319.98 - 5.00) ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
     "<td>" + response.meta.scheme_name + "</td>";
     table.appendChild(tr);
 
@@ -87,7 +87,7 @@ tr = document.createElement('tr');
 tr = document.createElement('tr');
     tr.innerHTML = "<td>" + response.data[0].date + "</td>"+
     "<td> 24.29 </td>" +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < 24.29 ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
+    "<td style='color:" + (parseFloat(response.data[0].nav) < (24.29 - 5.00) ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
     "<td>" + response.meta.scheme_name + "</td>";
     table.appendChild(tr);
     
@@ -111,7 +111,7 @@ request = new Request(`https://api.mfapi.in/mf/148703/latest`, {
 tr = document.createElement('tr');
     tr.innerHTML = "<td>" + response.data[0].date + "</td>"+
     "<td> 25.58 </td>" +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < 25.58 ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
+    "<td style='color:" + (parseFloat(response.data[0].nav) < (25.58 - 5.00) ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
     "<td>" + response.meta.scheme_name + "</td>";
     table.appendChild(tr);
 
@@ -127,7 +127,7 @@ tr = document.createElement('tr');
 tr = document.createElement('tr');
     tr.innerHTML = "<td>" + response.data[0].date + "</td>"+
     "<td> 104.95 </td>" +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < 104.95 ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
+    "<td style='color:" + (parseFloat(response.data[0].nav) < (104.95 - 5.00) ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
     "<td>" + response.meta.scheme_name + "</td>";
     table.appendChild(tr);
 
@@ -142,7 +142,7 @@ tr = document.createElement('tr');
 tr = document.createElement('tr');
     tr.innerHTML = "<td>" + response.data[0].date + "</td>"+
     "<td> 50.76 </td>" +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < 50.76 ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
+    "<td style='color:" + (parseFloat(response.data[0].nav) < (50.76 - 5.00) ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
     "<td>" + response.meta.scheme_name + "</td>";
     table.appendChild(tr);
 
@@ -157,7 +157,7 @@ tr = document.createElement('tr');
 tr = document.createElement('tr');
     tr.innerHTML = "<td>" + response.data[0].date + "</td>"+
     "<td> 28.07 </td>" +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < 28.07 ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
+    "<td style='color:" + (parseFloat(response.data[0].nav) < (28.07 - 5.00) ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
     "<td>" + response.meta.scheme_name + "</td>";
     table.appendChild(tr);
 
@@ -172,7 +172,7 @@ tr = document.createElement('tr');
 tr = document.createElement('tr');
     tr.innerHTML = "<td>" + response.data[0].date + "</td>"+
     "<td> 184.80 </td>" +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < 184.80 ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
+    "<td style='color:" + (parseFloat(response.data[0].nav) < (184.80 - 5.00) ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
     "<td>" + response.meta.scheme_name + "</td>";
     table.appendChild(tr);
 
@@ -187,7 +187,7 @@ tr = document.createElement('tr');
 tr = document.createElement('tr');
     tr.innerHTML = "<td>" + response.data[0].date + "</td>"+
     "<td> 46.44 </td>" +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < 46.44 ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
+    "<td style='color:" + (parseFloat(response.data[0].nav) < (46.44 - 5.00) ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
     "<td>" + response.meta.scheme_name + "</td>";
     table.appendChild(tr);
 
@@ -212,7 +212,7 @@ request = new Request(`https://api.mfapi.in/mf/147704/latest`, {
 tr = document.createElement('tr');
     tr.innerHTML = '<td>' + response.data[0].date + '</td>' +
     '<td> 38.03 </td>' +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < 38.03 ? "red'>" : "green'>") + response.data[0].nav + '</td>' +
+    "<td style='color:" + (parseFloat(response.data[0].nav) < (38.03 - 5.00) ? "red'>" : "green'>") + response.data[0].nav + '</td>' +
     "<td>" + response.meta.scheme_name + "</td>";
     table.appendChild(tr);
 
@@ -228,7 +228,7 @@ tr = document.createElement('tr');
 tr = document.createElement('tr');
     tr.innerHTML = '<td>' + response.data[0].date + '</td>' +
     '<td> 20.13 </td>' +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < 20.13 ? "red'>" : "green'>" ) + response.data[0].nav + '</td>' +
+    "<td style='color:" + (parseFloat(response.data[0].nav) < (20.13 - 5.00) ? "red'>" : "green'>" ) + response.data[0].nav + '</td>' +
     "<td>" + response.meta.scheme_name + "</td>";
     table.appendChild(tr);
 
@@ -244,7 +244,7 @@ tr = document.createElement('tr');
 tr = document.createElement('tr');
     tr.innerHTML = '<td>' + response.data[0].date + '</td>' +
     '<td> 127.69 </td>' +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < 127.69 ? "red;'>" : "green;'>" ) + response.data[0].nav + '</td>' +
+    "<td style='color:" + (parseFloat(response.data[0].nav) < (127.69 - 5.00) ? "red;'>" : "green;'>" ) + response.data[0].nav + '</td>' +
     "<td>" + response.meta.scheme_name + "</td>";
     table.appendChild(tr);
 
@@ -260,7 +260,7 @@ tr = document.createElement('tr');
 tr = document.createElement('tr');
     tr.innerHTML = '<td>' + response.data[0].date + '</td>' +
     '<td> 213.51 </td>' +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < 213.51 ? "red;'>" : "green;'>" ) + response.data[0].nav + '</td>' +
+    "<td style='color:" + (parseFloat(response.data[0].nav) < (213.51 - 5.00) ? "red;'>" : "green;'>" ) + response.data[0].nav + '</td>' +
     "<td>" + response.meta.scheme_name + "</td>";
     table.appendChild(tr);
 
@@ -276,7 +276,7 @@ tr = document.createElement('tr');
 tr = document.createElement('tr');
     tr.innerHTML = '<td>' + response.data[0].date + '</td>' +
     '<td> 153.58 </td>' +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < 153.58 ? "red;'>" : "green;'>" ) + response.data[0].nav + '</td>' +
+    "<td style='color:" + (parseFloat(response.data[0].nav) < (153.58 - 5.00) ? "red;'>" : "green;'>" ) + response.data[0].nav + '</td>' +
     "<td>" + response.meta.scheme_name + "</td>";
     table.appendChild(tr);
 
@@ -292,7 +292,7 @@ tr = document.createElement('tr');
 tr = document.createElement('tr');
     tr.innerHTML = "<td>" + response.data[0].date + "</td>"+
     "<td> 49.76 </td>" +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < 49.76 ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
+    "<td style='color:" + (parseFloat(response.data[0].nav) < (49.76 - 5.00) ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
     "<td>" + response.meta.scheme_name + "</td>";
     table.appendChild(tr);
 
