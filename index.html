@@ -49,7 +49,7 @@
 
 let tr = document.createElement('tr');
     tr.innerHTML = "<td>" + response.data[0].date + "</td>"+
-    "<td> 34.68 </td>" +
+    "<td> 33.15 </td>" +
     "<td style='color:" + (parseFloat(response.data[0].nav) < (33.15 - 5.00) ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
     "<td>" + response.meta.scheme_name + "</td>";
     table.appendChild(tr);
@@ -79,7 +79,7 @@ tr = document.createElement('tr');
 
 tr = document.createElement('tr');
     tr.innerHTML = "<td>" + response.data[0].date + "</td>"+
-    "<td> 24.29 </td>" +
+    "<td> 22.76 </td>" +
     "<td style='color:" + (parseFloat(response.data[0].nav) < (22.76 - 5.00) ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
     "<td>" + response.meta.scheme_name + "</td>";
     table.appendChild(tr);
