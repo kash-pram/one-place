@@ -30,31 +30,24 @@
     // response.forEach(function(object) {
 // console.log('object', object);
 
-  // Mahindra Manulife Mid Cap Fund
-  let request = new Request(`https://api.mfapi.in/mf/142110/latest`, {
-    method: 'GET',
-    headers: headers
-  });
-  let result = await fetch(request);
-  let response = await result.json();
 
-
-let tr = document.createElement('tr');
-    tr.innerHTML = "<td>" + response.data[0].date + "</td>"+
-    "<td> 38.03 </td>" +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < (38.03 - 5.00) ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
-    "<td>" + response.meta.scheme_name + "</td>";
-    table.appendChild(tr);
+// Mahindra Manulife Mid Cap Fund
+// let tr = document.createElement('tr');
+//     tr.innerHTML = "<td>" + response.data[0].date + "</td>"+
+//     "<td> 38.03 </td>" +
+//     "<td style='color:" + (parseFloat(response.data[0].nav) < (38.03 - 5.00) ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
+//     "<td>" + response.meta.scheme_name + "</td>";
+//     table.appendChild(tr);
 
     // ICICI Prudential BHARAT 22 FOF
-    request = new Request(`https://api.mfapi.in/mf/143903/latest`, {
+    let request = new Request(`https://api.mfapi.in/mf/143903/latest`, {
         method: 'GET',
         headers: headers
     });
-    result = await fetch(request);
-    response = await result.json();
+    let result = await fetch(request);
+    let response = await result.json();
 
-tr = document.createElement('tr');
+let tr = document.createElement('tr');
     tr.innerHTML = "<td>" + response.data[0].date + "</td>"+
     "<td> 34.68 </td>" +
     "<td style='color:" + (parseFloat(response.data[0].nav) < (34.68 - 5.00) ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
