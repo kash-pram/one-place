@@ -189,105 +189,105 @@ tr = document.createElement('tr');
 
 // PA
 
-    tr = document.createElement('tr');
-    tr.innerHTML = '<td colspan="3"> PA </td><td> <td/>';
-    table.appendChild(tr);
+    // tr = document.createElement('tr');
+    // tr.innerHTML = '<td colspan="3"> PA </td><td> <td/>';
+    // table.appendChild(tr);
 
 
     // Motilal Oswal Large and Midcap Fund
-request = new Request(`https://api.mfapi.in/mf/147704/latest`, {
-        method: 'GET',
-        headers: headers
-    });
-    result = await fetch(request);
-    response = await result.json();
+// request = new Request(`https://api.mfapi.in/mf/147704/latest`, {
+//         method: 'GET',
+//         headers: headers
+//     });
+//     result = await fetch(request);
+//     response = await result.json();
 
-tr = document.createElement('tr');
-    tr.innerHTML = '<td>' + response.data[0].date + '</td>' +
-    '<td> 38.03 </td>' +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < (38.03 - 5.00) ? "red'>" : "green'>") + response.data[0].nav + '</td>' +
-    "<td>" + response.meta.scheme_name + "</td>";
-    table.appendChild(tr);
+// tr = document.createElement('tr');
+//     tr.innerHTML = '<td>' + response.data[0].date + '</td>' +
+//     '<td> 38.03 </td>' +
+//     "<td style='color:" + (parseFloat(response.data[0].nav) < (38.03 - 5.00) ? "red'>" : "green'>") + response.data[0].nav + '</td>' +
+//     "<td>" + response.meta.scheme_name + "</td>";
+//     table.appendChild(tr);
 
 
     // Axis Nifty Smallcap 50 Index Fund
-    request = new Request(`https://api.mfapi.in/mf/149894/latest`, {
-        method: 'GET',
-        headers: headers
-    });
-    result = await fetch(request);
-    response = await result.json();
+//     request = new Request(`https://api.mfapi.in/mf/149894/latest`, {
+//         method: 'GET',
+//         headers: headers
+//     });
+//     result = await fetch(request);
+//     response = await result.json();
 
-tr = document.createElement('tr');
-    tr.innerHTML = '<td>' + response.data[0].date + '</td>' +
-    '<td> 20.13 </td>' +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < (20.13 - 5.00) ? "red'>" : "green'>" ) + response.data[0].nav + '</td>' +
-    "<td>" + response.meta.scheme_name + "</td>";
-    table.appendChild(tr);
+// tr = document.createElement('tr');
+//     tr.innerHTML = '<td>' + response.data[0].date + '</td>' +
+//     '<td> 20.13 </td>' +
+//     "<td style='color:" + (parseFloat(response.data[0].nav) < (20.13 - 5.00) ? "red'>" : "green'>" ) + response.data[0].nav + '</td>' +
+//     "<td>" + response.meta.scheme_name + "</td>";
+//     table.appendChild(tr);
 
 
     // Motilal Oswal Midcap Fund
-    request = new Request(`https://api.mfapi.in/mf/127042/latest`, {
-        method: 'GET',
-        headers: headers
-    });
-    result = await fetch(request);
-    response = await result.json();
+//     request = new Request(`https://api.mfapi.in/mf/127042/latest`, {
+//         method: 'GET',
+//         headers: headers
+//     });
+//     result = await fetch(request);
+//     response = await result.json();
 
-tr = document.createElement('tr');
-    tr.innerHTML = '<td>' + response.data[0].date + '</td>' +
-    '<td> 127.69 </td>' +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < (127.69 - 5.00) ? "red;'>" : "green;'>" ) + response.data[0].nav + '</td>' +
-    "<td>" + response.meta.scheme_name + "</td>";
-    table.appendChild(tr);
+// tr = document.createElement('tr');
+//     tr.innerHTML = '<td>' + response.data[0].date + '</td>' +
+//     '<td> 127.69 </td>' +
+//     "<td style='color:" + (parseFloat(response.data[0].nav) < (127.69 - 5.00) ? "red;'>" : "green;'>" ) + response.data[0].nav + '</td>' +
+//     "<td>" + response.meta.scheme_name + "</td>";
+//     table.appendChild(tr);
 
 
     // HDFC Mid-Cap Opportunities Fund
-    request = new Request(`https://api.mfapi.in/mf/118989/latest`, {
-        method: 'GET',
-        headers: headers
-    });
-    result = await fetch(request);
-    response = await result.json();
+//     request = new Request(`https://api.mfapi.in/mf/118989/latest`, {
+//         method: 'GET',
+//         headers: headers
+//     });
+//     result = await fetch(request);
+//     response = await result.json();
 
-tr = document.createElement('tr');
-    tr.innerHTML = '<td>' + response.data[0].date + '</td>' +
-    '<td> 213.51 </td>' +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < (213.51 - 5.00) ? "red;'>" : "green;'>" ) + response.data[0].nav + '</td>' +
-    "<td>" + response.meta.scheme_name + "</td>";
-    table.appendChild(tr);
+// tr = document.createElement('tr');
+//     tr.innerHTML = '<td>' + response.data[0].date + '</td>' +
+//     '<td> 213.51 </td>' +
+//     "<td style='color:" + (parseFloat(response.data[0].nav) < (213.51 - 5.00) ? "red;'>" : "green;'>" ) + response.data[0].nav + '</td>' +
+//     "<td>" + response.meta.scheme_name + "</td>";
+//     table.appendChild(tr);
 
 
     // Kotak Emerging Equity Scheme
-    request = new Request(`https://api.mfapi.in/mf/119775/latest`, {
-        method: 'GET',
-        headers: headers
-    });
-    result = await fetch(request);
-    response = await result.json();
+//     request = new Request(`https://api.mfapi.in/mf/119775/latest`, {
+//         method: 'GET',
+//         headers: headers
+//     });
+//     result = await fetch(request);
+//     response = await result.json();
 
-tr = document.createElement('tr');
-    tr.innerHTML = '<td>' + response.data[0].date + '</td>' +
-    '<td> 153.58 </td>' +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < (153.58 - 5.00) ? "red;'>" : "green;'>" ) + response.data[0].nav + '</td>' +
-    "<td>" + response.meta.scheme_name + "</td>";
-    table.appendChild(tr);
+// tr = document.createElement('tr');
+//     tr.innerHTML = '<td>' + response.data[0].date + '</td>' +
+//     '<td> 153.58 </td>' +
+//     "<td style='color:" + (parseFloat(response.data[0].nav) < (153.58 - 5.00) ? "red;'>" : "green;'>" ) + response.data[0].nav + '</td>' +
+//     "<td>" + response.meta.scheme_name + "</td>";
+//     table.appendChild(tr);
 
 
     // Edelweiss Small Cap Fund 
-    request = new Request(`https://api.mfapi.in/mf/146196/latest`, {
-        method: 'GET',
-        headers: headers
-    });
-    result = await fetch(request);
-    response = await result.json();
+//     request = new Request(`https://api.mfapi.in/mf/146196/latest`, {
+//         method: 'GET',
+//         headers: headers
+//     });
+//     result = await fetch(request);
+//     response = await result.json();
 
-tr = document.createElement('tr');
-    tr.innerHTML = "<td>" + response.data[0].date + "</td>"+
-    "<td> 49.76 </td>" +
-    "<td style='color:" + (parseFloat(response.data[0].nav) < (49.76 - 5.00) ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
-    "<td>" + response.meta.scheme_name + "</td>";
-    table.appendChild(tr);
+// tr = document.createElement('tr');
+//     tr.innerHTML = "<td>" + response.data[0].date + "</td>"+
+//     "<td> 49.76 </td>" +
+//     "<td style='color:" + (parseFloat(response.data[0].nav) < (49.76 - 5.00) ? "red'>" : "green'>") + response.data[0].nav + "</td>" +
+//     "<td>" + response.meta.scheme_name + "</td>";
+//     table.appendChild(tr);
 
 
 
